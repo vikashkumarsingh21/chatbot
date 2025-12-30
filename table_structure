@@ -1,0 +1,16 @@
+table name==USE ngo_chatbot;
+
+
+CREATE TABLE parent_chat (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(50),
+    middle_name VARCHAR(50),
+    last_name VARCHAR(50),
+    email VARCHAR(100),
+    phone VARCHAR(15),
+    child_name VARCHAR(50),
+    child_age INT,
+    child_gender VARCHAR(10),
+    parent_query TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
